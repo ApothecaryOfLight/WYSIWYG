@@ -1,5 +1,6 @@
 .emplaced_image {
     max-width: 50%;
     user-select: none;
-    draggable: false;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
