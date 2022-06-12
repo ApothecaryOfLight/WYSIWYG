@@ -1,19 +1,3 @@
-
-const images = [];
-
-function add_gallery_images() {
-
-}
-
-function delete_gallery_image() {
-
-}
-
-function emplace_gallery_image( GalleryImageReference ) {
-
-}
-
-
 function upload_images() {
     const image_input = document.createElement("input");
     image_input.type = 'file';
@@ -64,40 +48,7 @@ function store_image( inImageData ) {
   //Compose raw data string.
   const rawImageData = "data:" + mime_type + ";base64," + data;
 
-  //Add the image to the array of image objects.
-  images.push({
-    "image_data": rawImageData
-  });
-
   add_visible_image_to_gallery( rawImageData );
-}
-
-function create_gallery_image_overlay( image_container_ref, image_ref ) {
-  const overlay = document.createElement("div");
-  overlay.classList = "blog_edit_gallery_image_control_overlay";
-
-  const delete_button = document.createElement("button");
-  delete_button.classList = "blog_edit_gallery_image_control_overlay_delete_button";
-  delete_button.textContent = "X";
-  delete_button.onclick = () => {
-    image_container_ref.remove();
-  }
-  overlay.appendChild( delete_button );
-
-  const emplace_button = document.createElement("button");
-  emplace_button.classList = "blog_edit_gallery_image_control_overlay_emplace_button";
-  emplace_button.textContent = "<-";
-  emplace_button.onclick = () => {
-    const image_element = document.createElement("img");
-    image_element.src = image_ref.src;
-    image_element.classList = "emplaced_image";
-
-    const myEditField = document.getElementById("myInput");
-    myEditField.appendChild( image_element );
-  }
-  overlay.appendChild( emplace_button );
-
-  return overlay;
 }
 
 function add_visible_image_to_gallery( raw_image_data ) {

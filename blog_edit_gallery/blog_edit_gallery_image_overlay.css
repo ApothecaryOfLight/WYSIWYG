@@ -1,0 +1,11 @@
+.blog_edit_gallery_image_control_overlay {
+    position: absolute;
+}
+
+.blog_edit_gallery_image_control_overlay_delete_button {
+    color:gainsboro;
+}
+
+.blog_edit_gallery_image_control_overlay_emplace_button {
+    color:gainsboro;
+}

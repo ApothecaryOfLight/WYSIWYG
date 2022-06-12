@@ -1,25 +1,3 @@
-.blog_edit_gallery_image_container {
-    width: 100%;
-}
-
-.blog_edit_gallery_image {
-    width: 95%;
-    height: 95%;
-    padding: 2.5%;
-}
-
-.blog_edit_gallery_image_control_overlay {
-    position: absolute;
-}
-
-.blog_edit_gallery_image_control_overlay_delete_button {
-    color:gainsboro;
-}
-
-.blog_edit_gallery_image_control_overlay_emplace_button {
-    color:gainsboro;
-}
-
 #image_gallery {
     position: absolute;
     right: 0px;
