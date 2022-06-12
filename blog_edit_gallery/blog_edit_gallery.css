@@ -19,3 +19,22 @@
 .blog_edit_gallery_image_control_overlay_emplace_button {
     color:gainsboro;
 }
+
+#image_gallery {
+    position: absolute;
+    right: 0px;
+
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: tan;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 2;
+
+    overflow-y: auto;
+}

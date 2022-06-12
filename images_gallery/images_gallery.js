@@ -5,7 +5,6 @@ function hide_gallery() {
 
 }
 
-const images = [];
 
 function add_image_to_gallery() {
     const image_input = document.createElement("input");

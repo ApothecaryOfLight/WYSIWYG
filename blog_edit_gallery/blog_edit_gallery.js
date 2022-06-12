@@ -1,4 +1,5 @@
 
+const images = [];
 
 function add_gallery_images() {
 

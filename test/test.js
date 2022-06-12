@@ -8,7 +8,6 @@ function recursively_traverse_tree( node, objectified_post ) {
 
         if( type == "#text" || type == "DIV" ) {
             if( node.textContent ) {
-                console.log( node.textContent );
                 objectified_post.push( node.textContent );
             }
             return;
