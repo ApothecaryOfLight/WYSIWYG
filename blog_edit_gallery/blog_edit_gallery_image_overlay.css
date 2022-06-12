@@ -1,11 +1,22 @@
 .blog_edit_gallery_image_control_overlay {
     position: absolute;
+    width: calc( 100% - 2em );
+    padding: 1em;
+
+    display: flex;
+    flex-direction: row;
 }
 
-.blog_edit_gallery_image_control_overlay_delete_button {
+.blod_edit_gallery_image_control_overlay_button {
     color:gainsboro;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    cursor: default;
+    text-align: center;
+    font-weight: bold;
 }
 
-.blog_edit_gallery_image_control_overlay_emplace_button {
-    color:gainsboro;
+.blod_edit_gallery_image_control_overlay_button:hover {
+    background-color: #7FFFD4A0;
 }
