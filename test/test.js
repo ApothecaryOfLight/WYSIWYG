@@ -8,14 +8,20 @@ function recursively_traverse_tree( node, objectified_post ) {
 
         if( type == "#text" || type == "DIV" ) {
             if( node.textContent ) {
-                objectified_post.push( node.textContent );
+                objectified_post.push({
+                    type: "text",
+                    content: node.textContent
+                });
             }
             return;
         } else if( type == "IMG" ) {
             objectified_post.push({
-                src: node.src,
-                name: "image name",
-                alt: "alt desc"
+                type: "image",
+                content: {
+                    src: node.src,
+                    name: "image name",
+                    alt: "alt desc"
+                }
             });
             return;
         }   
