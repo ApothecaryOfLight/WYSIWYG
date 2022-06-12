@@ -42,7 +42,6 @@ body {
 .image {
     width: 500px;
     user-select: none;
-    draggable: false;
 }
 
 .image:hover {
